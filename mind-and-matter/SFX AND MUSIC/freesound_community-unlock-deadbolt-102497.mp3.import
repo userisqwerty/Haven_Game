@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bn6muflug1trm"
+path="res://.godot/imported/freesound_community-unlock-deadbolt-102497.mp3-9ee222253939725150a7337ce6429c07.mp3str"
+
+[deps]
+
+source_file="res://SFX AND MUSIC/freesound_community-unlock-deadbolt-102497.mp3"
+dest_files=["res://.godot/imported/freesound_community-unlock-deadbolt-102497.mp3-9ee222253939725150a7337ce6429c07.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

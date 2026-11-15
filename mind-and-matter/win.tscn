@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://b44m3ghp671kv"]
+
+[ext_resource type="Script" uid="uid://8kjtx0aeh7p6" path="res://win.gd" id="1_wao2c"]
+
+[node name="Control" type="Control" unique_id=1616380478]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_wao2c")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=924883437]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.800003, 16.280003)
+color = Color(0.24313726, 0.22352941, 0.22352941, 1)
+
+[node name="Label" type="Label" parent="." unique_id=714705449]
+layout_mode = 0
+offset_left = 217.00002
+offset_top = 137.0
+offset_right = 554.0
+offset_bottom = 160.0
+scale = Vector2(2.1007, 6.3672566)
+text = "YOU ESCAPED! *and bounced back home ;)*"
+
+[node name="Button" type="Button" parent="." unique_id=619351000]
+layout_mode = 0
+offset_left = 377.00003
+offset_top = 399.0
+offset_right = 498.00003
+offset_bottom = 430.0
+scale = Vector2(2.6576583, 4.5266466)
+text = "BOUNCE BACK"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

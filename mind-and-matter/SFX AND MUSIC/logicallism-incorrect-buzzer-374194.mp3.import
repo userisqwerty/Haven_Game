@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bfvdei15bbn05"
+path="res://.godot/imported/logicallism-incorrect-buzzer-374194.mp3-3d72c1755b8cfc6bfed6b5c0d62276ee.mp3str"
+
+[deps]
+
+source_file="res://SFX AND MUSIC/logicallism-incorrect-buzzer-374194.mp3"
+dest_files=["res://.godot/imported/logicallism-incorrect-buzzer-374194.mp3-3d72c1755b8cfc6bfed6b5c0d62276ee.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

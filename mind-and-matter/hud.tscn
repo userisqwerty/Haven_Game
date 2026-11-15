@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://bxks11v3lcggj"]
+
+[ext_resource type="Script" uid="uid://bshey4ollur5t" path="res://hud.gd" id="1_37p78"]
+
+[node name="HUD" type="CanvasLayer" unique_id=277450160]
+script = ExtResource("1_37p78")
+
+[node name="TimerLabel" type="Label" parent="." unique_id=717546012]
+offset_left = 12.0
+offset_top = 99.0
+offset_right = 81.00003
+offset_bottom = 137.0
+scale = Vector2(0.76, 1)
+theme_override_font_sizes/font_size = 25
+uppercase = true
+
+[node name="NotebookButton" type="Button" parent="." unique_id=1071510146]
+offset_left = 8.0
+offset_top = 147.0
+offset_right = 93.0
+offset_bottom = 178.0
+text = "Clues"
+
+[node name="NotebookPanel" type="Panel" parent="." unique_id=1321509902]
+visible = false
+offset_left = 4.0
+offset_top = 175.0
+offset_right = 230.0
+offset_bottom = 386.0
+
+[node name="NotesLabel" type="Label" parent="NotebookPanel" unique_id=245548929]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 7.0
+offset_right = 231.0
+offset_bottom = 200.0
+
+[node name="PadlockPanel" type="Panel" parent="." unique_id=1289776638]
+visible = false
+offset_left = 398.0
+offset_top = 203.0
+offset_right = 701.0
+offset_bottom = 355.0
+
+[node name="CodeInput" type="LineEdit" parent="PadlockPanel" unique_id=1079670993]
+layout_mode = 0
+offset_top = 4.0
+offset_right = 305.0
+offset_bottom = 152.0
+placeholder_text = "ENTER CODE....."
+alignment = 1
+
+[node name="SubmitButton" type="Button" parent="PadlockPanel" unique_id=1107137713]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 112.0
+offset_right = 238.0
+offset_bottom = 147.0
+text = "UNLOCK
+"
+
+[node name="CloseButton" type="Button" parent="PadlockPanel" unique_id=708331585]
+layout_mode = 0
+offset_left = 199.0
+offset_right = 217.0
+offset_bottom = 31.0
+scale = Vector2(5.681639, 1.4062287)
+text = "X"
+
+[node name="Label" type="Label" parent="." unique_id=1655054453]
+offset_left = 9.0
+offset_top = 443.0
+offset_right = 115.0
+offset_bottom = 518.0
+text = "Walk: WASD
+Switch Soul: F
+Interact: E"
+horizontal_alignment = 2
+autowrap_mode = 3

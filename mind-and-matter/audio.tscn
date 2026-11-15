@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c5y5llrgavexj"]
+
+[ext_resource type="Script" uid="uid://c5ivcwitqbhqe" path="res://audio.gd" id="1_74vr2"]
+[ext_resource type="AudioStream" uid="uid://cw4t2uawigait" path="res://SFX AND MUSIC/atlasaudio-horror-ambience-512255.mp3" id="2_x5nyw"]
+[ext_resource type="AudioStream" uid="uid://0eojmt783bb7" path="res://SFX AND MUSIC/chrysalyn-corporate-minimalist-mobile-phone-ringtone-562423.mp3" id="3_0svpk"]
+[ext_resource type="AudioStream" uid="uid://bsnodgnsfy1d3" path="res://SFX AND MUSIC/freesound_community-crumple-03-40747.mp3" id="4_5olcg"]
+[ext_resource type="AudioStream" uid="uid://bn6muflug1trm" path="res://SFX AND MUSIC/freesound_community-unlock-deadbolt-102497.mp3" id="5_pgqns"]
+[ext_resource type="AudioStream" uid="uid://bfvdei15bbn05" path="res://SFX AND MUSIC/logicallism-incorrect-buzzer-374194.mp3" id="6_cqcg1"]
+
+[node name="Audio" type="Node" unique_id=1023007612]
+script = ExtResource("1_74vr2")
+
+[node name="AmbientMusic" type="AudioStreamPlayer2D" parent="." unique_id=1347196825]
+stream = ExtResource("2_x5nyw")
+autoplay = true
+
+[node name="PhoneSFX" type="AudioStreamPlayer2D" parent="." unique_id=1003005404]
+stream = ExtResource("3_0svpk")
+
+[node name="PaperSFX" type="AudioStreamPlayer2D" parent="." unique_id=1053323210]
+stream = ExtResource("4_5olcg")
+
+[node name="UnlockSFX" type="AudioStreamPlayer2D" parent="." unique_id=1666947715]
+stream = ExtResource("5_pgqns")
+
+[node name="ErrorSFX" type="AudioStreamPlayer2D" parent="." unique_id=686042979]
+stream = ExtResource("6_cqcg1")

@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://rui1oy5togv2"]
+
+[ext_resource type="PackedScene" uid="uid://eewdwrakrdio" path="res://player.tscn" id="1_fj7yv"]
+[ext_resource type="Texture2D" uid="uid://k4levje2d6d1" path="res://icon.svg" id="2_tlwt5"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fj7yv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgfsc"]
+size = Vector2(40.9987, 1199.8452)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eiqrc"]
+size = Vector2(122, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_okknv"]
+size = Vector2(110.742676, 244.14725)
+
+[node name="World" type="Node2D" unique_id=596190545]
+
+[node name="Player" parent="." unique_id=487344863 instance=ExtResource("1_fj7yv")]
+position = Vector2(574, 482)
+collision_mask = 3
+
+[node name="OuterWalls" type="StaticBody2D" parent="." unique_id=530481744]
+material = SubResource("CanvasItemMaterial_fj7yv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OuterWalls" unique_id=1872012812]
+position = Vector2(2.5, 320)
+shape = SubResource("RectangleShape2D_dgfsc")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="OuterWalls" unique_id=1354418278]
+position = Vector2(1152, 320)
+shape = SubResource("RectangleShape2D_dgfsc")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="OuterWalls" unique_id=327084843]
+position = Vector2(587.9332, -4.7219343)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_dgfsc")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="OuterWalls" unique_id=1668956097]
+position = Vector2(575, 660)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_dgfsc")
+
+[node name="LockedDoor" type="StaticBody2D" parent="." unique_id=973734438]
+position = Vector2(565, 312)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LockedDoor" unique_id=609440394]
+position = Vector2(2, -1)
+shape = SubResource("RectangleShape2D_eiqrc")
+debug_color = Color(0.63664967, 0.04002831, 1.4439226e-07, 0.41960785)
+
+[node name="BlackPhone" type="Area2D" parent="." unique_id=731368123]
+position = Vector2(911, 608)
+scale = Vector2(1.5260601, 0.40958893)
+
+[node name="Sprite2D" type="Sprite2D" parent="BlackPhone" unique_id=1721540589]
+position = Vector2(31, 0)
+scale = Vector2(0.60683066, 1)
+texture = ExtResource("2_tlwt5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlackPhone" unique_id=58319073]
+position = Vector2(31.781189, -39.0636)
+shape = SubResource("RectangleShape2D_okknv")
+
+[node name="BodyMarker" type="Sprite2D" parent="." unique_id=854850975]
+visible = false
+position = Vector2(959, 537)
+scale = Vector2(0.56, 0.52)
+texture = ExtResource("2_tlwt5")
+
+[connection signal="body_entered" from="BlackPhone" to="Player" method="_on_black_phone_body_entered"]
+[connection signal="body_exited" from="BlackPhone" to="Player" method="_on_black_phone_body_exited"]

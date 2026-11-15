@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://da6s4tuashupw"]
+
+[ext_resource type="Script" uid="uid://brjykebx5qnc5" path="res://clue_paper.gd" id="1_sror5"]
+[ext_resource type="Texture2D" uid="uid://b124lswwjjb3k" path="res://PNG-Single Sheet.png" id="2_sror5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgfsc"]
+size = Vector2(122, 126)
+
+[node name="Clue" type="Area2D" unique_id=1285525668]
+script = ExtResource("1_sror5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1852564962]
+position = Vector2(-3.999999, -4.500003)
+scale = Vector2(0.2722222, 0.24145299)
+texture = ExtResource("2_sror5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070586613]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_dgfsc")
